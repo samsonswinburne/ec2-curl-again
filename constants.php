@@ -33,27 +33,27 @@
 */
 
 // [ACTION REQUIRED] your full name
-define('STUDENT_NAME', 'Daniel Andrews');
+define('STUDENT_NAME', 'Samson Kemp');
 // [ACTION REQUIRED] your Student ID
-define('STUDENT_ID', '100743836');
+define('STUDENT_ID', '104938668');
 // [ACTION REQUIRED] your tutorial session
-define('TUTORIAL_SESSION', 'Sunday 09:15AM');
+define('TUTORIAL_SESSION', 'Wednesday 18.30');
 
 // [ACTION REQUIRED] name of the S3 bucket that stores images
-define('BUCKET_NAME', 'student-photo-bucket');
+define('BUCKET_NAME', 'skemp-new-bucket');
 // [ACTION REQUIRED] region of the above bucket
 define('REGION', 'us-east-1');
 // no need to update this const
-define('S3_BASE_URL','https://'.BUCKET_NAME.'.s3.amazonaws.com/');
+define('S3_BASE_URL','https://skemp-new-bucket.s3.amazonaws.com/');
 
 // [ACTION REQUIRED] name of the database that stores photo meta-data (note that this is not the DB identifier of the RDS instance)
-define('DB_NAME', 'photoalbum');
+define('DB_NAME', 'photos');
 // [ACTION REQUIRED] endpoint of RDS instance
-define('DB_ENDPOINT', 'photo-db.ce0fri9v1t7f.us-east-1.rds.amazonaws.com');
+define('DB_ENDPOINT', 'assignment-1b-database.crhegiyh5lto.us-east-1.rds.amazonaws.com');
 // [ACTION REQUIRED] username of your RDS instance 
 define('DB_USERNAME', 'admin');
 // [ACTION REQUIRED] password of your RDS instance
-define('DB_PWD', 'admin123');
+define('DB_PWD', 'adminpassword');
 
 // [ACTION REQUIRED] name of the DB table that stores photo's meta-data
 define('DB_PHOTO_TABLE_NAME', 'photo_metadata');
