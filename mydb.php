@@ -28,6 +28,12 @@ class MyDB
 		$photos = array ();
 		try {
 			$stm = $this->dbh->query ( 'SELECT * FROM ' . DB_PHOTO_TABLE_NAME );
+			
+			if(!$stm){
+				$this->dbh->query('CREATE TABLE photo_metadata ( title VARCHAR(30), description VARCHAR(30), creationdate VARCHAR(30), keywords VARCHAR(30), reference VARCHAR(30) );');
+			
+			}
+			
 			foreach ( $stm as $row ) {
 				array_push ( $photos, new Photo ( $row [DB_PHOTO_TITLE_COL_NAME], 
 												$row [DB_PHOTO_DESCRIPTION_COL_NAME],
